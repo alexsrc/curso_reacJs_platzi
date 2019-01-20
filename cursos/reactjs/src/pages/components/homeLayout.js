@@ -1,8 +1,11 @@
 import React from 'react';
+import Related from "./related";
+import './homeLayout.css';
 
 function HomeLayout(props) {
     return(
-        <section>
+        <section className="HomeLayout">
+            <Related/>
             {props.children}
         </section>
     );

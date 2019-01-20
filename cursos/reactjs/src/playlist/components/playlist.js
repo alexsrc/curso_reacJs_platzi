@@ -10,7 +10,6 @@ import FullScreen from "../../icons/components/fullScreen";
 
 function Playlist(props){
     //render(){
-        console.log(props.data);
         const playlist = props.data;
         return(
             <div className="Playlist">
@@ -38,6 +37,8 @@ function Playlist(props){
                     playlist.map((item)=>{
                         return (
                             <Media
+
+                                handleClick={props.handleOpenModal}
                                 key={item.id}
                                 {...item}
                             />
