@@ -24,7 +24,7 @@ class Home extends Component{
 
                 <HomeLayout>
                     <CategoryList
-                        data={this.props.data.user}
+                        data={this.props.data}
                         handleOpenModal={this.handleOpenModal}
                     />
                     {this.state.modalVisible &&

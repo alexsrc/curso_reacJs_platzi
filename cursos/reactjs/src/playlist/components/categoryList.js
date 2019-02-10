@@ -2,11 +2,13 @@ import React from 'react';
 import Category from "./category";
 import PropTypes from 'prop-types';
 import './categoryList.css';
+import SearchContainer from '../../widgets/container/search';
 function CategoryList(props) {
     const categories= props.data.categories;
 
     return(
         <div className="CategoryList">
+            <SearchContainer/>
             {
                 categories.map((category)=>{
                     return(
