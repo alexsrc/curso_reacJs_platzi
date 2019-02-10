@@ -4,7 +4,7 @@ import CategoryList from "../../playlist/components/categoryList";
 import ModalContainer from "../../widgets/components/modalContainer";
 import Modal from "../../widgets/components/modal";
 import HandleError from "../../error/containers/handleError";
-
+import VideoPlayer from "../../player/containers/videoPlayer";
 class Home extends Component{
     state={
         modalVisible: false,
@@ -23,6 +23,7 @@ class Home extends Component{
             <HandleError>
 
                 <HomeLayout>
+                    <VideoPlayer/>
                     <CategoryList
                         data={this.props.data}
                         handleOpenModal={this.handleOpenModal}

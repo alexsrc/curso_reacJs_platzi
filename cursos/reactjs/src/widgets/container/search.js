@@ -19,7 +19,7 @@ class SearchContainer extends Component{
         this.setState({
             value:event.target.value.replace(' ', '-'),
         })
-    }
+    };
 
     render(){
         return(
